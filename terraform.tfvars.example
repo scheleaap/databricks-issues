@@ -1,0 +1,5 @@
+region                      = "eu-central-1"
+databricks_account_id       = "1311067a-011f-11ee-be56-0242ac120002"
+databricks_account_username = "foo@example.com"
+databricks_account_password = "abcd"
+metastore_id                = "d3435fe2-011a-11ee-be56-0242ac120002"
