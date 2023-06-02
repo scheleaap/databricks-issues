@@ -1,8 +1,3 @@
-variable "aws_account_id" {
-  description = "The AWS Account ID where the module will be deployed"
-  type        = string
-}
-
 variable "region" {
   description = "The AWS region where the module will be deployed"
   type        = string
