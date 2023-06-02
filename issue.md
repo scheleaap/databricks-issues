@@ -50,7 +50,7 @@ Terraform will perform the following actions:
 ### Configuration
 
 A fully-functioning minimal example that reproduces the problem, with steps that describe how to reproduce can be found here:
-https://github.com/scheleaap/databricks-issues/tree/sp-data-source
+https://github.com/scheleaap/databricks-issues/tree/sp-data-source-workspace-access
 
 The most relevant code:
 
@@ -113,7 +113,7 @@ If we change the tags on the workspace root bucket, the tags are updated *and* t
 ### Steps to Reproduce
 
 A fully-functioning minimal example that reproduces the problem, with steps that describe how to reproduce can be found here:
-https://github.com/scheleaap/databricks-issues/tree/sp-data-source
+https://github.com/scheleaap/databricks-issues/tree/sp-data-source-workspace-access
 
 ### Terraform and provider versions
 
@@ -130,4 +130,4 @@ is 1.4.6. You can update by downloading from https://www.terraform.io/downloads.
 
 ### Debug Output
 
-https://github.com/scheleaap/databricks-issues/blob/sp-data-source/tf-debug.log
+https://github.com/scheleaap/databricks-issues/blob/sp-data-source-workspace-access/tf-debug.log
