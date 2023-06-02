@@ -9,4 +9,3 @@ override.tf.json
 .idea
 databricks_credentials.sh
 terraform.tfvars
-question.md
