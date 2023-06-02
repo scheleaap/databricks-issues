@@ -49,7 +49,8 @@ Terraform will perform the following actions:
 
 ### Configuration
 
-A fully-functioning minimal example that reproduces the problem, with steps that describe how to reproduce can be found here: TODO
+A fully-functioning minimal example that reproduces the problem, with steps that describe how to reproduce can be found here:
+https://github.com/scheleaap/databricks-issues/tree/sp-data-source
 
 The most relevant code:
 
@@ -69,7 +70,7 @@ resource "databricks_service_principal" "jobs" {
   depends_on = [time_sleep.wait_for_workspace]
 
   display_name         = "${var.customer_id}-jobs"
-  allow_cluster_create = false // TRIGGER: Change to true
+  allow_cluster_create = false
 }
 
 module "workspace_principals_access" {
@@ -111,16 +112,22 @@ If we change the tags on the workspace root bucket, the tags are updated *and* t
 
 ### Steps to Reproduce
 
-A fully-functioning minimal example that reproduces the problem, with steps that describe how to reproduce can be found here: TODO
+A fully-functioning minimal example that reproduces the problem, with steps that describe how to reproduce can be found here:
+https://github.com/scheleaap/databricks-issues/tree/sp-data-source
 
 ### Terraform and provider versions
-<!-- Please paste the output of `terraform version`. If version of `databricks` provider is not the latest (https://github.com/databricks/terraform-provider-databricks/releases), please make sure to use the latest one. -->
+
+```
+Terraform v1.4.0
+on linux_amd64
++ provider registry.terraform.io/databricks/databricks v1.18.0
++ provider registry.terraform.io/hashicorp/aws v4.67.0
++ provider registry.terraform.io/hashicorp/time v0.9.1
+
+Your version of Terraform is out of date! The latest version
+is 1.4.6. You can update by downloading from https://www.terraform.io/downloads.html
+```
 
 ### Debug Output
-<!-- Please add turn on logging, e.g. `TF_LOG=DEBUG terraform apply -no-color` and run command again, paste it to gist & provide the link to gist. If you're still willing to paste in log output, make sure you provide only relevant log lines with requests. It would make it more readable, if you pipe the log through `| grep databricks | sed -E 's/^.* plugin[^:]+: (.*)$/\1/'`, e.g.: `TF_LOG=DEBUG terraform apply -no-color 2>&1 | grep databricks | sed -E 's/^.* plugin[^:]+: (.*)$/\1/' 2>&1 |tee tf-debug.log`. If Terraform produced a panic, please provide a link to a GitHub Gist containing the output of the `crash.log`. -->
 
-### Important Factoids
-<!-- Are there anything atypical about your accounts that we should know? -->
-
-
-
+https://github.com/scheleaap/databricks-issues/blob/sp-data-source/tf-debug.log
