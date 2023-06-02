@@ -1,4 +1,4 @@
-# Completely unrelated changes trigger replacement of `databricks_mws_permission_assignment` when using `databricks_service_principal` data source in another module
+# [ISSUE] Completely unrelated changes trigger replacement of `databricks_mws_permission_assignment` when using `databricks_service_principal` data source in another module
 
 Some changes completely unrelated to workspace permissions of service principals
 will trigger the replacement of [`databricks_mws_permission_assignment`](https://registry.terraform.io/providers/databricks/databricks/latest/docs/resources/mws_permission_assignment) resources 
