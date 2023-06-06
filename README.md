@@ -1,4 +1,4 @@
-# Example for ...
+# Example for databricks/terraform-provider-databricks/issues/2381
 
 ## Steps to reproduce
 
