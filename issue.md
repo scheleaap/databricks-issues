@@ -16,7 +16,7 @@ Whenever the behavior is triggered, Terraform will:
 * Remove the service principal from the workspace and add it again
 
 This poses a problem for us, because when a service principal is removed & re-added, its On-Behalf-Of token is replaced as well, which is used by other applications.
-What this mean is that many seemingly harmless infrastructure changes currently break out applications using OBO tokens.
+What this means is that many seemingly harmless infrastructure changes currently break our applications using OBO tokens.
 
 It seems that this behavior does not happen when the `databricks_service_principal` data source is moved into the top-level module (i.e. [main.tf](main.tf)).
 
