@@ -38,5 +38,5 @@ variable "vpc_cidr_block" {
 variable "workspace_name" {
   description = "The name of the workspace"
   type        = string
-  default     = "issue-1234" // TODO change
+  default     = "issue-2382"
 }
