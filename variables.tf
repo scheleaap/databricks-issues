@@ -33,11 +33,11 @@ variable "vpc_cidr_block" {
 variable "metastore_name" {
   description = "The name of the metastore"
   type        = string
-  default     = "issue-todo"
+  default     = "issue-3157"
 }
 
 variable "workspace_name" {
   description = "The name of the workspace"
   type        = string
-  default     = "issue-todo"
+  default     = "issue-3157"
 }
