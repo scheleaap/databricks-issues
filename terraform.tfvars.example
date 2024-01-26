@@ -1,0 +1,5 @@
+region                      = "eu-central-1"
+aws_account_id              = 111111111111
+databricks_account_id       = "1311067a-011f-11ee-be56-0242ac120002"
+databricks_account_username = "foo@example.com"
+databricks_account_password = "abcd"
