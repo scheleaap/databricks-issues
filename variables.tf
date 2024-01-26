@@ -11,7 +11,6 @@ variable "region" {
 variable "databricks_account_id" {
   description = "The Databricks Account ID"
   type        = string
-  default     = "4c36a1c7-9b03-4cea-9d2e-4b9cdeef721b"
 }
 
 variable "databricks_account_username" {

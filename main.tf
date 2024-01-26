@@ -28,7 +28,7 @@ module "metastore" {
   metastore_name        = var.metastore_name
   aws_account_id        = var.aws_account_id
   region                = var.region
-  databricks_account_id = "4c36a1c7-9b03-4cea-9d2e-4b9cdeef721b"
+  databricks_account_id = var.databricks_account_id
 }
 
 module "workspace_metastore_assignment" {
