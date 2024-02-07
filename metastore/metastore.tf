@@ -25,4 +25,5 @@ resource "databricks_metastore_data_access" "this" {
     role_arn = aws_iam_role.metastore_data_access.arn
   }
   is_default = true
+  force_destroy = true
 }
