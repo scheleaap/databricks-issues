@@ -1,7 +1,8 @@
 resource "databricks_metastore" "this" {
-  provider     = databricks.workspace
-  name         = var.metastore_name
-  storage_root = "s3://${aws_s3_bucket.metastore.id}"
+  provider      = databricks.workspace
+  name          = var.metastore_name
+  storage_root  = "s3://${aws_s3_bucket.metastore.id}"
+  force_destroy = true
 }
 
 # There is a race condition between the creation of the data access IAM role and the registering
